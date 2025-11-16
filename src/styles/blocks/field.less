@@ -1,0 +1,32 @@
+.field {
+   display: flex;
+   flex-direction: column;
+   &__input,
+   &__textarea,
+   &__select {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: @white;
+    border-radius: 5px;
+    padding: 17px 20px 16px;
+   }
+   &__input,
+    &__select {
+    height: 55px;
+   }
+   &__textarea { 
+    height: 150px;
+   }
+   &__label {
+    margin-bottom: 5px;
+    font-size: 16px;
+   }
+   &__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+   }
+}
