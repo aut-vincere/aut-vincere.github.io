@@ -1,4 +1,9 @@
 .check {
+    &--red {
+    color: @red;
+    .check__mark {
+      border-color: @red;
+    }
    box-sizing: border-box;
    position: relative;
    display: flex;
@@ -6,6 +11,21 @@
    padding-left: 40px;
    min-height: 24px; 
    cursor: pointer;
+
+    .check__input {
+      &:checked {
+        & ~ .check__mark {
+          background-color: @red;
+        }
+      }
+    }
+  }
+   &--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
    &__input {
     .is-hidden();
     &:checked {
@@ -38,4 +58,3 @@
     border: 1px solid @black;
     transition: background-color 0.2s;
    }
-}

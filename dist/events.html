@@ -49,17 +49,177 @@
               <time datetime="2024-12-07T18:00" class="event-card__time">07.12.2024 | начало 18.00</time>
             </a>
           </article>
-
-
-
         </div>
-
       </section>
     </div>
+    <table class="events__tariffs-table  table">
+      <thead class="table__head">
+        <tr class="table__head-tr">
+          <th class="table__th"></th>
+          <th class="table__th">Тариф «Light»</th>
+          <th class="table__th">Тариф «Promo»</th>
+          <th class="table__th">Тариф «All stars»</th>
+        </tr>
+      </thead>
+      <tbody class="table__body">
+        <tr class="table__tr">
+          <th class="table__body-th">Стоимость за час</th>
+          <td class="table__td">1 000 ₽</td>
+          <td class="table__td">3 000 ₽</td>
+          <td class="table__td">3 000 ₽</td>
+        </tr>
+        <tr class="table__tr">
+          <th class="table__body-th">Ведущий мероприятия</th>
+          <td class="table__td"></td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+        </tr>
+        <tr class="table__tr">
+          <th class="table__body-th">Фотосъемка</th>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+        </tr>
+        <tr class="table__tr">
+          <th class="table__body-th">Видеосъемка</th>
+          <td class="table__td"></td>
+          <td class="table__td"></td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+        </tr>
+        <tr class="table__tr">
+          <th class="table__body-th">Организация питания</th>
+          <td class="table__td"></td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+        </tr>
+        <tr class="table__tr">
+          <th class="table__body-th">Декор</th>
+          <td class="table__td"></td>
+          <td class="table__td"></td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+        </tr>
+        <tr class="table__tr">
+          <th class="table__body-th">Звуковое сопровождение</th>
+          <td class="table__td"></td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+        </tr>
+        <tr class="table__tr">
+          <th class="table__body-th">Дополнительное освещение</th>
+          <td class="table__td"></td>
+          <td class="table__td"></td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+        </tr>
+
+        <tr class="table__tr">
+          <th class="table__body-th">Клининг</th>
+          <td class="table__td"></td>
+          <td class="table__td"></td>
+          <td class="table__td">
+            <span class="ok"></span>
+          </td>
+        </tr>
+      </tbody>
+
+      <tfoot class="table__footer">
+        <tr class="table__footer-tr">
+          <th class="table__footer-th"></th>
+          <th class="table__footer-th">Тариф «Light»</th>
+          <th class="table__footer-th">Тариф «Promo»</th>
+          <th class="table__footer-th">Тариф «All stars»</th>
+        </tr>
+      </tfoot>
+    </table>
   </main>
   <footer class="page-footer">
     footer
   </footer>
+  <div class="pp" id="eventPP">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button class="pp__x-btn x-btn">
+          <svg class="x-btn__icon" width="12" height="12">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="pp__container">
+        <h2 class="pp__title">Заполните форму
+          <br />и мы подберем площадку
+        </h2>
+
+        <form class="pp__form form">
+          <div class="radio">
+            <label class="radio__item">
+              <input class="radio__input" type="radio" name="format" value="seminar">
+              <span class="radio__mark"></span>
+              <span class="radio__label">Мастер-класс/семинар</span>
+            </label>
+            <label class="radio__item">
+              <input class="radio__input" type="radio" name="format" value="concert">
+              <span class="radio__mark"></span>
+              <span class="radio__label">Мастер-класс/семинар</span>
+            </label>
+            <label class="radio__item">
+              <input class="radio__input" type="radio" name="format" value="other">
+              <span class="radio__mark"></span>
+              <span class="radio__label">Мастер-класс/семинар</span>
+            </label>
+          </div>
+          <label class="field">
+            <span class="field__label">Планирумое количество посетителей:</span>
+            <select class="field__select" name="amount">
+              <option value="20">до 20 человек</option>
+              <option value="100">от 20 до 100 человек</option>
+              <option value="500">от 100 до 500 человек</option>
+              <option value="1000">более 500 человек</option>
+            </select>
+          </label>
+          <label class="field">
+            <span class="field__label">Имя*</span>
+            <input class="field__input" type="text" placeholder="Имя" name="name" required />
+          </label>
+          <label class="field">
+            <span class="field__title">Есть пожелания? Напиши нам:</span>
+            <textarea class="field__textarea" name="textarea"></textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="agree" class="check__input" required />
+            <span class="check__mark"></span>
+            <span class="check__label">
+              Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
+            </span>
+
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
 
 </body>
 

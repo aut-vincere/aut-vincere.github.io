@@ -18,53 +18,12 @@
 @import "blocks/page-header.less";
 @import "blocks/reserve.less";
 @import "blocks/listing.less";
+@import "blocks/content.less";
+
 
 
 @import "blocks/booking.less";
 @import "blocks/events.less";
-
-.event {
-  padding: 40px 0 150px;
-}
-
-.reserve {
-  display: grid;
-  grid-template-columns: 405px 1fr;
-  gap: 65px 11%;
-  grid-template-areas:
-  "checks scheme"
-  "order legend";
-  width: 100%;
-}
-
-.reserve__checks {
-  grid-area: checks;
-}
-
-.reserve__scheme {
-  grid-area: scheme;
-}
-
-.reserve_order {
-  grid-area: order;
-}
-
-.reserve_legend {
-  grid-area: legend;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .listing__article-card {
@@ -83,7 +42,7 @@
 
   .article-card__link {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     text-decoration: none;
     width: 100%;
