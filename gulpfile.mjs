@@ -34,7 +34,7 @@ const resources = {
   svgSprite: "src/assets/svg-sprite/*.svg",
   static: [
     "src/assets/favicons/**/*.*",
-    "src/assets/fonts/**/*.{woff,woff2}",
+    "src/assets/fonts/",
     "src/assets/icons/**/*.*",
     // "src/assets/video/**/*.{mp4,webm}",
     // "src/assets/audio/**/*.{mp3,ogg,wav,aac}",
