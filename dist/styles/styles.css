@@ -382,8 +382,6 @@ __mark {
   transition: background-color 0.2s;
 }
 .about__container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,6 +391,8 @@ __mark {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   max-width: 1414px;
   margin: 0 auto;
@@ -435,8 +435,6 @@ __mark {
   z-index: 100;
 }
 .page-header__container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,6 +444,8 @@ __mark {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   max-width: 1414px;
   margin: 0 auto;
@@ -509,19 +509,15 @@ __mark {
 }
 .reserve__checks {
   grid-area: checks;
-  background-color: yellow;
 }
 .reserve__order {
   grid-area: order;
-  background-color: blue;
 }
 .reserve__scheme {
   grid-area: scheme;
-  background-color: #ffa200;
 }
 .reserve__legend {
   grid-area: legend;
-  background-color: #ff0051;
 }
 .reserve__scheme-wrapper {
   position: relative;
@@ -595,6 +591,67 @@ __mark {
 .listing__event-card {
   width: calc(33.333% - 58px);
 }
+body {
+  padding: 0;
+  background-color: #dedede;
+  font-family: "Open Sans", sans-serif;
+}
+.body {
+  min-width: 830px;
+}
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.article {
+  padding: 40px 0 150px;
+}
+.article__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.article__content {
+  max-width: 830px;
+}
+.article__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 90px;
+  text-align: center;
+  margin-bottom: 40px;
+}
 .content {
   color: #1f1e1e;
   font-family: "Open Sans", sans-serif;
@@ -606,7 +663,7 @@ __mark {
 }
 .content h1,
 .content h2,
-.content h4,
+.content h3,
 .content h4,
 .content h5,
 .content h6 {
@@ -617,7 +674,7 @@ __mark {
 }
 .content h1:first-child,
 .content h2:first-child,
-.content h4:first-child,
+.content h3:first-child,
 .content h4:first-child,
 .content h5:first-child,
 .content h6:first-child {
@@ -625,7 +682,7 @@ __mark {
 }
 .content h1:last-child,
 .content h2:last-child,
-.content h4:last-child,
+.content h3:last-child,
 .content h4:last-child,
 .content h5:last-child,
 .content h6:last-child {
@@ -637,7 +694,7 @@ __mark {
 .content h2 {
   font-size: 28px;
 }
-.content h4 {
+.content h3 {
   font-size: 24px;
 }
 .content h4 {
@@ -856,7 +913,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
-  border-right: 1px solid #BFBFBF;
+  border-right: 1px solid #bfbfbf;
   text-transform: uppercase;
 }
 .table__th:first-child,
@@ -873,8 +930,8 @@ body {
           box-sizing: border-box;
   height: 50px;
   padding: 10px 10px 10px 0;
-  border-top: 1px solid #BFBFBF;
-  border-bottom: 1px solid #BFBFBF;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -885,7 +942,7 @@ body {
           box-sizing: border-box;
   height: 50px;
   padding: 10px;
-  border: 1px solid #BFBFBF;
+  border: 1px solid #bfbfbf;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -901,7 +958,7 @@ body {
   height: 26px;
   margin: auto;
   border-radius: 50%;
-  background-color: #1F1E1E;
+  background-color: #1f1e1e;
 }
 .ok::after {
   content: "";
