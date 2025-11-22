@@ -2,21 +2,41 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 100%;
-  max-width: 1414px;
+ .container();
 
 &__event-list {
   display: flex;
   flex-wrap: wrap;
   gap: 120px 58px;
+  @media @bw1660 {
+  gap: 90px 40px;
+  }
+  @media @bw1020 {
+  gap: 80px 30px; 
+}
+@media @bw650 {
+gap: 60px 0; 
+}
+
 }
 
 &__event-card {
-  width: calc(33.333% - 58px);
+  width: calc(33.333% - 38.666px);
+   @media @bw1660 {
+   width: calc(33.333% - 26.666px); 
+   }
 }
+
+@media @bw1020 {
+width: calc(50% - 15px); 
+}
+
+@media @bw650 {
+width: 100%; 
+}
+
+
+
 
 
 }
